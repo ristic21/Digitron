@@ -9,22 +9,24 @@
     <script>
 
         var a = prompt("Unesite prvi broj");
-        var c = prompt("Upisite slovima operaciju koju zelite da izvrsite (sabiranje, oduzimanje, mnozenje, deljenje)");
+        var c = prompt("Operacija koju zelite da izvrsite (+, -, *, /)");
         var b = prompt("Please enter second number");
 
-        if(c == "sabiranje"){
+        if(c == "+"){
             var r = parseInt(a) + parseInt(b);
         }
-            else if(c == "oduzimanje") {
+            else if(c == "-") {
                 var r = a-b;
             }
-            else if(c == "mnozenje"){
+            else if(c == "*"){
                 var r = a*b;
             }
-            else if(c == "deljenje") {
+            else if(c == "/") {
                 var r = a/b;
+                if (b == 0) { 
+                throw alert('Nije deljivo'); 
+                } 
             }
-
         alert("Rezultat je:" + r);
 
     </script>
