@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        var a = prompt("Unesite prvi broj");
+        var c = prompt("Upisite slovima operaciju koju zelite da izvrsite (sabiranje, oduzimanje, mnozenje, deljenje)");
+        var b = prompt("Please enter second number");
+
+        if(c == "sabiranje"){
+            var r = parseInt(a) + parseInt(b);
+        }
+            else if(c == "oduzimanje") {
+                var r = a-b;
+            }
+            else if(c == "mnozenje"){
+                var r = a*b;
+            }
+            else if(c == "deljenje") {
+                var r = a/b;
+            }
+
+        alert("Rezultat je:" + r);
+
+    </script>
+</body>
+</html>
